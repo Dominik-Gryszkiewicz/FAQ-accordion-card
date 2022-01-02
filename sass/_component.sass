@@ -1,0 +1,104 @@
+.card-component
+    min-width: 340px
+    max-width: 350px
+    position: relative
+    background-color: white
+    border-radius: 20px
+    padding-left: 25px
+    padding-right: 25px
+    .img-main
+        position: absolute
+        top: -105px
+        left: 50%
+        transform: translateX(-50%) 
+        width: 70%
+    .img-pattern-mobile
+        position: absolute
+        top: -5px
+        left: 50%
+        transform: translateX(-50%) 
+        width: 70%
+    .img-pattern-desktop
+        display: none
+    h1
+        margin-top: 115px
+        font-size: 31px
+    .accordion
+        margin: 15px 0 50px 0
+        .accordion-item
+            border: none
+            border-bottom: 1px solid hsl(240, 6%, 85%)
+            .accordion-button
+                color: hsl(237, 12%, 33%)
+                background-color: white
+                font-size: 13px
+                padding-left: 0
+                padding-right: 0
+                padding-bottom: 14px
+                padding-top: 14px
+                box-shadow: none
+            .accordion-button:hover
+                color: hsl(14, 88%, 65%)
+            .accordion-button::after
+                width: .7rem
+                height: .7rem
+                background-image: url("../images/icon-arrow-down.svg")
+                background-size: .7rem
+            .accordion-button[aria-expanded="true"]
+                font-weight: bold
+            .collapsed
+                height: auto
+        .accordion-body
+            padding-left: 0
+            padding-right: 0
+            padding-top: 0
+            color: hsl(240, 6%, 50%)
+
+@media (max-height: 700px)
+    .card-component
+        margin-top: 100px
+
+@media (min-width: 1000px)
+    .card-component
+        display: flex
+        justify-content: flex-end
+        align-items: center
+        min-width: 1000px
+        padding: 60px 80px 70px 80px
+        h1
+            margin-top: auto
+        .accordion
+            margin: auto
+            margin-top: 20px
+        .img-main
+            position: absolute
+            top: 50%
+            left: -9%
+            transform: translateY(-50%) 
+            width: 50%
+        .img-pattern-mobile
+            display: none
+        .img-pattern-desktop
+            display: block
+            position: absolute
+            top: 15%
+            left: -9%
+            width: 50%
+
+@media (min-width: 1500px)
+    .card-component
+        max-width: 1000px
+        h1
+           font-size: 32px
+        .img-main
+            left: -8%
+            width: 45%
+        .img-pattern-desktop
+            top: 8%
+            left: -13%
+            width: 50%
+        .accordion
+            .accordion-item
+                .accordion-button
+                    font-size: 14px
+

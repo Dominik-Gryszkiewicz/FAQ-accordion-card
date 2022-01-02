@@ -1,0 +1,177 @@
+body {
+  min-height: 100vh;
+  background: #6565e7;
+  background: -webkit-gradient(linear, left bottom, left top, from(#6565e7), to(#af67e9));
+  background: linear-gradient(0deg, #6565e7 0%, #af67e9 100%);
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+@media (min-width: 1000px) {
+  body {
+    font-size: 13px;
+  }
+}
+
+.card-component {
+  min-width: 340px;
+  max-width: 350px;
+  position: relative;
+  background-color: white;
+  border-radius: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.card-component .img-main {
+  position: absolute;
+  top: -105px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 70%;
+}
+
+.card-component .img-pattern-mobile {
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 70%;
+}
+
+.card-component .img-pattern-desktop {
+  display: none;
+}
+
+.card-component h1 {
+  margin-top: 115px;
+  font-size: 31px;
+}
+
+.card-component .accordion {
+  margin: 15px 0 50px 0;
+}
+
+.card-component .accordion .accordion-item {
+  border: none;
+  border-bottom: 1px solid #d6d6db;
+}
+
+.card-component .accordion .accordion-item .accordion-button {
+  color: #4a4b5e;
+  background-color: white;
+  font-size: 13px;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 14px;
+  padding-top: 14px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.card-component .accordion .accordion-item .accordion-button:hover {
+  color: #f47c57;
+}
+
+.card-component .accordion .accordion-item .accordion-button::after {
+  width: .7rem;
+  height: .7rem;
+  background-image: url("../images/icon-arrow-down.svg");
+  background-size: .7rem;
+}
+
+.card-component .accordion .accordion-item .accordion-button[aria-expanded="true"] {
+  font-weight: bold;
+}
+
+.card-component .accordion .accordion-item .collapsed {
+  height: auto;
+}
+
+.card-component .accordion .accordion-body {
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  color: #787887;
+}
+
+@media (max-height: 700px) {
+  .card-component {
+    margin-top: 100px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .card-component {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    min-width: 1000px;
+    padding: 60px 80px 70px 80px;
+  }
+  .card-component h1 {
+    margin-top: auto;
+  }
+  .card-component .accordion {
+    margin: auto;
+    margin-top: 20px;
+  }
+  .card-component .img-main {
+    position: absolute;
+    top: 50%;
+    left: -9%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    width: 50%;
+  }
+  .card-component .img-pattern-mobile {
+    display: none;
+  }
+  .card-component .img-pattern-desktop {
+    display: block;
+    position: absolute;
+    top: 15%;
+    left: -9%;
+    width: 50%;
+  }
+}
+
+@media (min-width: 1500px) {
+  .card-component {
+    max-width: 1000px;
+  }
+  .card-component h1 {
+    font-size: 32px;
+  }
+  .card-component .img-main {
+    left: -8%;
+    width: 45%;
+  }
+  .card-component .img-pattern-desktop {
+    top: 8%;
+    left: -13%;
+    width: 50%;
+  }
+  .card-component .accordion .accordion-item .accordion-button {
+    font-size: 14px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
